@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://bipfot2aox42x"]
+
+[ext_resource type="Texture2D" uid="uid://crrltagb7qejo" path="res://Sprites/Default size/explosionSmoke1.png" id="1_8i271"]
+[ext_resource type="Texture2D" uid="uid://cw72y5k8l5vsl" path="res://Sprites/Default size/explosionSmoke2.png" id="2_haagm"]
+[ext_resource type="Texture2D" uid="uid://dyg05ovwfni6t" path="res://Sprites/Default size/explosionSmoke3.png" id="3_trt3x"]
+[ext_resource type="Texture2D" uid="uid://divjbbwnhn1gy" path="res://Sprites/Default size/explosionSmoke4.png" id="4_xcmls"]
+[ext_resource type="Texture2D" uid="uid://dvjl3wksc1kwk" path="res://Sprites/Default size/explosionSmoke5.png" id="5_o7bla"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tmmrt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8i271")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_haagm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_trt3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xcmls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o7bla")
+}],
+"loop": false,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="ExplosionSmoke" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_tmmrt")
+frame = 4
+frame_progress = 1.0
