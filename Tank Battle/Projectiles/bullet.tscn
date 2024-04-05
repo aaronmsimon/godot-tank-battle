@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://by0gjyc8c7ri8"]
+
+[ext_resource type="Texture2D" uid="uid://bc653a8astiwc" path="res://Sprites/Default size/bulletBlue1_outline.png" id="1_ay7or"]
+[ext_resource type="Script" path="res://Components/MoveComponent.cs" id="2_6mml7"]
+
+[node name="Bullet" type="Node2D"]
+
+[node name="BulletSprite" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_ay7or")
+
+[node name="MoveComponent" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("2_6mml7")
+actor = NodePath("..")
+velocity = 200.0
