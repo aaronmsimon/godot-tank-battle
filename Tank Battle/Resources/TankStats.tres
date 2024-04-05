@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c51aqhfgghdix"]
+
+[ext_resource type="Script" path="res://Resources/TankStats.cs" id="1_8urcx"]
+
+[resource]
+script = ExtResource("1_8urcx")
+moveSpeed = 150.0
+rotateSpeed = 5.0
